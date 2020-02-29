@@ -11,6 +11,11 @@ import Parent from './useCallback/Parent';
 import CounterMemo from './useMemo/CounterMemo';
 
 
+import InputFocus from './useRef/InputFocus';
+import ClassTimer from './useRef/ClassTimer';
+import HookTimer from './useRef/HookTimer';
+
+
 export const UserContext = React.createContext();
 export const AgeContext = React.createContext();
 
@@ -56,7 +61,13 @@ function App() {
 
       {/* <Parent /> */}
 
-      <CounterMemo />
+      {/* <CounterMemo /> */}
+
+      <InputFocus />
+
+      <ClassTimer />
+
+      <HookTimer />
 
     </div>
   );
