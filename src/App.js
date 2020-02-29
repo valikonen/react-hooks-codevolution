@@ -5,7 +5,10 @@ import ComponentA from './useReduce_with_useContext/componentA';
 import ComponentB from './useReduce_with_useContext/componentB';
 import ComponentC from './useReduce_with_useContext/componentC';
 
-import DataFetchingTwo from './useReduce_with_useContext/DataFetchingTwo'
+import DataFetchingTwo from './useReduce_with_useContext/DataFetchingTwo';
+
+import Parent from './useCallback/Parent';
+import CounterMemo from './useMemo/CounterMemo';
 
 
 export const UserContext = React.createContext();
@@ -49,7 +52,11 @@ function App() {
         <ComponentC />
       </CountContext.Provider> */}
 
-      <DataFetchingTwo />
+      {/* <DataFetchingTwo /> */}
+
+      {/* <Parent /> */}
+
+      <CounterMemo />
 
     </div>
   );

@@ -36,7 +36,7 @@ export default function DataFetchingTwo() {
             .then(response => {
                 dispatch({
                     type: 'FETCH_SUCCESS',
-                    payload: response.data
+                    post: response.data
                 })
             })
             .catch(err => {
@@ -48,6 +48,7 @@ export default function DataFetchingTwo() {
 
     return(
         <>
+            <p>{JSON.stringify(state)}</p>
             { state.loading ? 'Loading' : state.post.title }
             { state.error ? state.error : null }
         </>
