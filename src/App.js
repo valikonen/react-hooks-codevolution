@@ -16,6 +16,14 @@ import ClassTimer from './useRef/ClassTimer';
 import HookTimer from './useRef/HookTimer';
 
 
+import DocTitle from './customHooks/DocTitle';
+import CounterOne from './customHooks/CounterOne';
+import CounterTwo from './customHooks/CounterTwo';
+
+
+import UserForm from './customHooks/UserForm';
+
+
 export const UserContext = React.createContext();
 export const AgeContext = React.createContext();
 
@@ -63,11 +71,18 @@ function App() {
 
       {/* <CounterMemo /> */}
 
-      <InputFocus />
+      {/* <InputFocus /> */}
 
-      <ClassTimer />
+      {/* <ClassTimer /> */}
 
-      <HookTimer />
+      {/* <HookTimer /> */}
+
+      {/* <DocTitle /> */}
+
+      {/* <CounterOne /> */}
+      {/* <CounterTwo /> */}
+
+      <UserForm />
 
     </div>
   );
